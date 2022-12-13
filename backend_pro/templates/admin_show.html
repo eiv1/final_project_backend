@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/adminShow.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+    <h1 > Hello ADMIN, </h1>
+    <h2> we are here to help you.. </h2>
+    </div>
+    <a href ="{{url_for('add')}}" class="btn addBtn">add</a>
+
+    <div class="title-table">
+        <h3>students</h3>
+        <table> 
+            <tr>
+                <th> ID </th>
+                <th> TZ </th>
+                <th> First name </th>
+                <th> Last name </th>
+                <th> Classrome </th>
+                <th> School </th>
+                <th> Email </th>
+                <th> Phone </th>
+                <th> Points </th>
+                <th> Options </th>
+            </tr>
+            {%for student in students%}
+            <tr>
+                <td> {{student.id}} </td>
+                <td> {{student.tz}} </td>
+                <td> {{student.first_name}} </td>
+                <td> {{student.last_name}} </td>
+                <td> {{student.classrome}} </td>
+                <td> {{student.school}} </td>
+                <td> {{student.email}} </td>
+                <td> {{student.phone}} </td>
+                <td> {{student.points}} </td>
+                <td>
+                    <a href="/delete/{{student.id}}/{{student.role}}" class="btn deleteBtn"> Delete </a>
+                    <br>
+                    <a href="/update/{{student.id}}/{{student.role}}" class="btn updateBtn">Update</a>
+                </td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+
+    <div class="title-table">
+        <h3>teachers</h3>
+        <table>
+            <tr>
+                <th> ID </th>
+                <th> TZ </th>
+                <th> First name </th>
+                <th> Last name </th>
+                <th> School </th>
+                <th> Email </th>
+                <th> Phone </th>
+                <th> Points </th>
+                <th> Options </th>
+                
+            </tr>
+            {%for teacher in teachers%}
+            <tr>
+                <td> {{teacher.id}} </td>
+                <td> {{teacher.tz}} </td>
+                <td> {{teacher.first_name}} </td>
+                <td> {{teacher.last_name}} </td>
+                <td> {{teacher.school}} </td>
+                <td> {{teacher.email}} </td>
+                <td> {{teacher.phone}} </td>
+                <td> {{teacher.points}} </td>
+                <td>
+                    <a href="/delete/{{teacher.id}}/{{teacher.role}}" class="btn deleteBtn">Delete</a>
+                    <br>
+                    <a href="/update/{{teacher.id}}/{{teacher.role}}" class="btn updateBtn">Update</a>
+                </td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+
+
+    <br></br>
+
+</body>
+

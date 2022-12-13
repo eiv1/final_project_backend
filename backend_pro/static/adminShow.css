@@ -1,0 +1,132 @@
+
+body{
+    background-color: #D1DBF9;
+    font-size: 20px;
+    display: flex;
+    flex-direction:column;
+} 
+.pop{
+    justify-content: center; 
+}
+/* לבדוק למה לא עובד */
+.title{
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    font-family: 'Lobster', cursive;
+    background-image: linear-gradient(to bottom, #85a1f7, #8da7f7, #96adf8, #9eb4f8, #a6baf8, #acbff8, #b3c3f8, #b9c8f8, #bfcdf8, #c5d2f9, #cbd6f9, #d1dbf9);
+}
+.addBtn{
+    background-color: #37ecbc;
+    margin: 0px 150px 0px 150px;
+    width: 10%;
+}
+.updateBtn {
+    margin: 5px;
+  background-color:#85A1F7;
+}
+.deleteBtn{
+    margin: 5px;
+    background-color: #f77373;
+}
+
+.btn {
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.title-table{
+    margin: 30px 150px 0px 150px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: large;
+}
+table, th, td {
+    border: 1px solid;
+}
+th, td {
+    padding: 3px;
+    text-align: center;
+}
+
+
+.myform {
+  background-color: #9da2dc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 580px;
+  padding: 40px;
+  width: 400px;
+  margin: auto;
+}
+
+/* .myform label{
+  margin: 5px 0px 0px 0px
+} */
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 22px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
